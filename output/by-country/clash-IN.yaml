@@ -5,20 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - vic
-  server: 65.2.178.161
+  server: 172.67.208.1
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
+  type: vless
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  tls: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 02 - vic
-  server: 65.2.191.73
+  server: vpn-in-001.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
+  sni: vk.com
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - vic
   server: 194.61.31.126
@@ -31,15 +38,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - vic
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +47,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - vic
   - 🇮🇳 印度 (India) 02 - vic
   - 🇮🇳 印度 (India) 03 - vic
-  - 🇮🇳 印度 (India) 04 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +55,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - vic
   - 🇮🇳 印度 (India) 02 - vic
   - 🇮🇳 印度 (India) 03 - vic
-  - 🇮🇳 印度 (India) 04 - vic
 rules:
 - MATCH,PROXIES

@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - vic",
-      "server": "172.67.192.84",
-      "server_port": 2095,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/juvsrnmgdu8i0179k5",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - vic",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -40,8 +26,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - vic",
-      "server": "172.67.151.109",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - vic",
+      "server": "172.67.134.170",
       "server_port": 443,
       "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
       "tls": {
@@ -63,8 +49,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - vic",
-        "🇹🇷 土耳其 (Turkey) 02 - vic",
-        "🇹🇷 土耳其 (Turkey) 03 - vic"
+        "🇹🇷 土耳其 (Turkey) 02 - vic"
       ]
     },
     {
@@ -72,8 +57,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - vic",
-        "🇹🇷 土耳其 (Turkey) 02 - vic",
-        "🇹🇷 土耳其 (Turkey) 03 - vic"
+        "🇹🇷 土耳其 (Turkey) 02 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,43 +12,48 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇫🇮 芬兰 (Finland) 02 - vic
-  server: 31.77.199.182
+  server: 151.101.56.6
   port: 443
   udp: true
   type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
   tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: chrome
+  servername: global.fastly.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
 - name: 🇫🇮 芬兰 (Finland) 03 - vic
-  server: 185.79.138.71
-  port: 448
+  server: 212.193.18.183
+  port: 8446
   udp: true
   type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   tls: true
   reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
+    public-key: f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c
+    short-id: 7f8e9d0c1b2a
+  servername: maps.apple.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: snob-grpc
 - name: 🇫🇮 芬兰 (Finland) 04 - vic
-  server: 144.31.90.72
+  server: 37.143.129.244
   port: 443
   udp: true
   type: vless
-  uuid: 4360f941-b541-43d4-8507-2de3763e0cfd
+  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: fl.convert-flow.net
-  client-fingerprint: qq
+    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
+    short-id: 48fd192dc4e46bc0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

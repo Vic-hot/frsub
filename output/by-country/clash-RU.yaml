@@ -5,13 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - vic
-  server: 130.49.189.158
-  port: 43558
+  server: 8.6.112.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  tls: true
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - vic
+  server: 195.133.23.200
+  port: 7018
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
-- name: 🇷🇺 俄罗斯 (Russia) 02 - vic
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇷🇺 俄罗斯 (Russia) 03 - vic
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 04 - vic
   server: msk.frkn.org
   port: 443
   udp: true
@@ -19,7 +42,30 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 03 - vic
+- name: 🇷🇺 俄罗斯 (Russia) 05 - vic
+  server: ru2.oshost.network
+  port: 80
+  udp: true
+  type: vless
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  network: ws
+  ws-opts:
+    path: /api/v2/stream
+- name: 🇷🇺 俄罗斯 (Russia) 06 - vic
+  server: 46.8.200.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  tls: true
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 07 - vic
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -31,21 +77,6 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - vic
-  server: 46.8.200.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +86,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - vic
   - 🇷🇺 俄罗斯 (Russia) 03 - vic
   - 🇷🇺 俄罗斯 (Russia) 04 - vic
+  - 🇷🇺 俄罗斯 (Russia) 05 - vic
+  - 🇷🇺 俄罗斯 (Russia) 06 - vic
+  - 🇷🇺 俄罗斯 (Russia) 07 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +98,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - vic
   - 🇷🇺 俄罗斯 (Russia) 03 - vic
   - 🇷🇺 俄罗斯 (Russia) 04 - vic
+  - 🇷🇺 俄罗斯 (Russia) 05 - vic
+  - 🇷🇺 俄罗斯 (Russia) 06 - vic
+  - 🇷🇺 俄罗斯 (Russia) 07 - vic
 rules:
 - MATCH,PROXIES

@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - vic
-  server: 172.67.192.84
-  port: 2095
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /juvsrnmgdu8i0179k5
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 - vic
   server: 156.67.63.231
   port: 443
   udp: true
@@ -28,8 +17,8 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - vic
-  server: 172.67.151.109
+- name: 🇹🇷 土耳其 (Turkey) 02 - vic
+  server: 172.67.134.170
   port: 443
   udp: true
   type: vless
@@ -49,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - vic
   - 🇹🇷 土耳其 (Turkey) 02 - vic
-  - 🇹🇷 土耳其 (Turkey) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - vic
   - 🇹🇷 土耳其 (Turkey) 02 - vic
-  - 🇹🇷 土耳其 (Turkey) 03 - vic
 rules:
 - MATCH,PROXIES
