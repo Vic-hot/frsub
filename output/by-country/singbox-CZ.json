@@ -4,15 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - vic",
-      "server": "162.159.152.4",
+      "type": "trojan",
+      "tag": "🇨🇿 捷克 (Czech) 01 - vic",
+      "server": "104.21.76.194",
       "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "rayan-007.maxima.dpdns.org",
+        "server_name": "X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,8 +23,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed",
         "headers": {
-          "Host": "rayan-007.maxima.dpdns.org"
+          "Host": "x8xus4x7utzmdozv2.bzuh25lzinnetwtocxyicx.workers.dev"
         }
       }
     },
@@ -30,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - vic"
+        "🇨🇿 捷克 (Czech) 01 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - vic"
+        "🇨🇿 捷克 (Czech) 01 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
