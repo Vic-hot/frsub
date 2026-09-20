@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - vic",
-      "server": "34.18.31.5",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - vic",
+      "server": "svvedko.nxxzxaw.beer",
       "server_port": 443,
-      "uuid": "bd82d5e7-4395-40e1-b34e-2974eb0c8555",
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "svvedko.nxxzxaw.beer",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4",
-          "short_id": "9c8748aa3f7d4219"
+          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+          "short_id": "fb442438e2223836"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01 - vic"
+        "🇸🇪 瑞典 (Sweden) 01 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01 - vic"
+        "🇸🇪 瑞典 (Sweden) 01 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
