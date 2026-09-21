@@ -5,17 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - vic
-  server: 31.58.181.88
-  port: 8443
+  server: 104.21.67.122
+  port: 443
   udp: true
   type: vless
-  uuid: ce57910d-b7a9-4eaa-9a94-a1dda0d08026
-  flow: xtls-rprx-vision
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
   tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  servername: novantunnel.tech
+  skip-cert-verify: true
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 02 - vic
   server: 130.49.161.70
   port: 443
@@ -27,15 +30,15 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - vic
-  server: 85.204.107.171
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - vic
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless

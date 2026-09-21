@@ -5,13 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - vic
-  server: 82.47.186.18
-  port: 19290
+  server: 87.58.148.70
+  port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
+  cipher: aes-256-gcm
+  password: rg0g3xp9rk9nk9o0
 - name: 🇫🇮 芬兰 (Finland) 02 - vic
+  server: 62.238.103.54
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
+    short-id: d059fb98048c5318
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - vic
+  server: 152.233.54.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  tls: true
+  reality-opts:
+    public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
+    short-id: 0a30e2aee95a7571
+  servername: fi1.cache-4d8a.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 04 - vic
+  server: 2.27.48.140
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7cbc0c1f-9aa1-4a4c-a052-45ccc855df10
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Ax1xKjjBS7afZ94zHY-9iI7hohBmzA-EpS-eRILX2CA
+    short-id: c66279532e2e
+  servername: intel.com
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 05 - vic
   server: 196.196.206.38
   port: 443
   udp: true
@@ -23,7 +64,7 @@ proxies:
     public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
     short-id: d110331f200987ae
   servername: finkafsb.finiki.lol
-  client-fingerprint: qq
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +72,9 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - vic
   - 🇫🇮 芬兰 (Finland) 02 - vic
+  - 🇫🇮 芬兰 (Finland) 03 - vic
+  - 🇫🇮 芬兰 (Finland) 04 - vic
+  - 🇫🇮 芬兰 (Finland) 05 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +82,8 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - vic
   - 🇫🇮 芬兰 (Finland) 02 - vic
+  - 🇫🇮 芬兰 (Finland) 03 - vic
+  - 🇫🇮 芬兰 (Finland) 04 - vic
+  - 🇫🇮 芬兰 (Finland) 05 - vic
 rules:
 - MATCH,PROXIES
