@@ -4,57 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01 - vic",
-      "server": "153.76.185.188",
-      "server_port": 3090,
-      "uuid": "9912a5ca-3ee1-45ac-b182-46fec2610ee0",
+      "server": "104.21.76.194",
+      "server_port": 443,
+      "password": "Telegram_healer_config",
+      "tls": {
+        "enabled": true,
+        "server_name": "X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed",
+        "headers": {
+          "Host": "x8xus4x7utzmdozv2.bzuh25lzinnetwtocxyicx.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - vic",
-      "server": "153.76.185.186",
+      "server": "153.76.185.88",
       "server_port": 3090,
-      "uuid": "9912a5ca-3ee1-45ac-b182-46fec2610ee0",
+      "uuid": "5ba9f3dc-e8ec-4c8c-b273-68daed2fef12",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - vic",
-      "server": "153.76.185.189",
-      "server_port": 3090,
-      "uuid": "5ebdc9ee-8b41-4487-93af-231cb0b47d60",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - vic",
-      "server": "95.85.230.35",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
-        }
       }
     },
     {
@@ -63,9 +46,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - vic",
-        "🇨🇿 捷克 (Czech) 02 - vic",
-        "🇨🇿 捷克 (Czech) 03 - vic",
-        "🇨🇿 捷克 (Czech) 04 - vic"
+        "🇨🇿 捷克 (Czech) 02 - vic"
       ]
     },
     {
@@ -73,9 +54,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - vic",
-        "🇨🇿 捷克 (Czech) 02 - vic",
-        "🇨🇿 捷克 (Czech) 03 - vic",
-        "🇨🇿 捷克 (Czech) 04 - vic"
+        "🇨🇿 捷克 (Czech) 02 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
