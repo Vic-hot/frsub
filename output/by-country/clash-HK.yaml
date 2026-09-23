@@ -13,14 +13,56 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - vic
-  server: 202.146.222.174
+  server: 212.192.13.81
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zHrJcutXYr6BTYZa
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - vic
+  server: sth.free-outline.giize.com
+  port: 1081
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: wwj19enpp68px8t7
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - vic
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - vic
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - vic
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: 'off'
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - vic
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - vic
+  server: 34.96.146.210
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  tls: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - vic
   server: hk-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -33,39 +75,46 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - vic
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - vic
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - vic
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүёрҹүі
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - vic
-  server: a2c6d68b-tm3mo0-u4mwoi-1jdha.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - vic
+  server: champion.xn--kivt58h.lol
+  port: 80
+  udp: true
+  type: vless
+  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - vic
+  server: 34.92.145.185
   port: 443
   udp: true
-  type: hysteria2
-  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
-  sni: a2c6d68b-tm3mo0-u4mwoi-1jdha.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - vic
-  server: mz.hkychina.com
-  port: 8443
+  type: vless
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  tls: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+    short-id: 64b3f192fc0669e1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - vic
+  server: 2.27.109.179
+  port: 45464
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - vic
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - vic
   server: 104.21.8.201
   port: 2096
   udp: true
@@ -74,21 +123,12 @@ proxies:
   tls: true
   servername: cdn-hk.skyvora.app
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /f7i3lo6xbs
     headers:
       Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - vic
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - vic
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - vic
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -96,6 +136,14 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - vic
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,6 +159,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - vic
   - 🇭🇰 中国香港 (Hong Kong) 09 - vic
   - 🇭🇰 中国香港 (Hong Kong) 10 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 11 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 12 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 13 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 14 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 15 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,5 +179,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - vic
   - 🇭🇰 中国香港 (Hong Kong) 09 - vic
   - 🇭🇰 中国香港 (Hong Kong) 10 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 11 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 12 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 13 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 14 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 15 - vic
 rules:
 - MATCH,PROXIES

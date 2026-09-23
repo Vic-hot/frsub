@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - vic
-  server: 104.21.4.124
+  server: 104.21.96.1
   port: 443
   udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev
-  skip-cert-verify: true
+  type: vless
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tr/W3Ei3SdcW9sRVMLIbEd8sB1lm?ed=2560
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
