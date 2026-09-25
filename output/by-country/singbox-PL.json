@@ -4,31 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - vic",
-      "server": "104.25.146.77",
-      "server_port": 443,
-      "uuid": "e6cc4788-3c45-4df1-94f3-8303504a65bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "khoda.ak-khoda.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "khoda.ak-khoda.workers.dev"
-        }
-      }
+      "server": "217.30.10.44",
+      "server_port": 9095,
+      "method": "aes-256-cfb",
+      "password": "N7j3pdTYkKmsy8CR"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - vic",
+      "server": "217.30.10.44",
+      "server_port": 9041,
+      "method": "aes-256-cfb",
+      "password": "U6qnYRhfyDmn8sgn"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
       "server": "217.30.10.44",
       "server_port": 9063,
       "method": "aes-256-cfb",
@@ -36,7 +29,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
+      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
+      "server": "217.30.10.44",
+      "server_port": 9076,
+      "method": "aes-256-cfb",
+      "password": "S2zDyyPcmZN2h8EC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 05 - vic",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",
@@ -44,16 +45,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
+      "tag": "🇵🇱 波兰 (Poland) 06 - vic",
       "server": "217.30.10.44",
-      "server_port": 9041,
+      "server_port": 9071,
       "method": "aes-256-cfb",
-      "password": "U6qnYRhfyDmn8sgn"
+      "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - vic",
-      "server": "185.223.57.10",
+      "tag": "🇵🇱 波兰 (Poland) 07 - vic",
+      "server": "185.223.57.16",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -75,45 +76,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 06 - vic",
-      "server": "146.59.116.19",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 - vic",
-      "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
-    },
-    {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 08 - vic",
-      "server": "144.31.171.108",
-      "server_port": 8444,
-      "uuid": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.chromevpn.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk",
-          "short_id": "93f5b0d1a8ce6247"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - vic",
       "server": "144.31.131.38",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -134,8 +98,20 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 09 - vic",
+      "server": "217.60.33.215",
+      "server_port": 443,
+      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
+      "tls": {
+        "enabled": true,
+        "server_name": "streambox.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 10 - vic",
-      "server": "admin.wwwinternetvideo.click",
+      "server": "144.31.49.47",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
@@ -178,7 +154,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 13 - vic",
-      "server": "144.31.5.3",
+      "server": "pl4.moritech.net",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
@@ -191,7 +167,7 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
