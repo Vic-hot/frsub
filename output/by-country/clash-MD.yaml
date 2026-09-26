@@ -4,25 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇬 尼日利亚 (Nigeria) 01 - vic
-  server: 103.97.91.17
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - vic
+  server: md-new.failspace.top
   port: 443
   udp: true
-  type: trojan
-  password: 600421cf-11d7-429f-a65b-c30397f1bc03
-  sni: la.freeguard.org
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: md-new.failspace.top
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇬 尼日利亚 (Nigeria) 01 - vic
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇬 尼日利亚 (Nigeria) 01 - vic
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - vic
 rules:
 - MATCH,PROXIES

@@ -5,26 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - vic
-  server: 13.61.0.108
+  server: 13.60.213.145
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - vic
-  server: 172.238.244.13
-  port: 17000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇸🇪 瑞典 (Sweden) 03 - vic
-  server: 13.48.104.64
+  server: 13.49.64.122
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 03 - vic
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 04 - vic
+  server: 143.246.193.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +45,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - vic
   - 🇸🇪 瑞典 (Sweden) 02 - vic
   - 🇸🇪 瑞典 (Sweden) 03 - vic
+  - 🇸🇪 瑞典 (Sweden) 04 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +54,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - vic
   - 🇸🇪 瑞典 (Sweden) 02 - vic
   - 🇸🇪 瑞典 (Sweden) 03 - vic
+  - 🇸🇪 瑞典 (Sweden) 04 - vic
 rules:
 - MATCH,PROXIES
