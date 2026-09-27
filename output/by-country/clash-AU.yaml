@@ -13,14 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - vic
-  server: 149.88.23.207
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 03 - vic
   server: 51.161.204.244
   port: 443
   udp: true
@@ -40,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - vic
   - 🇦🇺 澳大利亚 (Australia) 02 - vic
-  - 🇦🇺 澳大利亚 (Australia) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - vic
   - 🇦🇺 澳大利亚 (Australia) 02 - vic
-  - 🇦🇺 澳大利亚 (Australia) 03 - vic
 rules:
 - MATCH,PROXIES
