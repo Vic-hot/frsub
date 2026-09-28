@@ -4,32 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - vic
-  server: 104.18.15.103
+- name: 🇧🇪 比利时 (Belgium) 01 - vic
+  server: 34.79.178.1
   port: 443
   udp: true
   type: vless
-  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
   tls: true
-  servername: server9.9966338.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
+    short-id: 95ae4a39d3933191
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /imnotarealherox
-    headers:
-      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - vic
+  - 🇧🇪 比利时 (Belgium) 01 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - vic
+  - 🇧🇪 比利时 (Belgium) 01 - vic
 rules:
 - MATCH,PROXIES
