@@ -27,13 +27,26 @@
       "password": "itzvpn@321"
     },
     {
+      "type": "hysteria2",
+      "tag": "🇮🇹 意大利 (Italy) 04 - vic",
+      "server": "us4.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "us4.xiaoliyu.cyou",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇹 意大利 (Italy) 01 - vic",
         "🇮🇹 意大利 (Italy) 02 - vic",
-        "🇮🇹 意大利 (Italy) 03 - vic"
+        "🇮🇹 意大利 (Italy) 03 - vic",
+        "🇮🇹 意大利 (Italy) 04 - vic"
       ]
     },
     {
@@ -42,7 +55,8 @@
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - vic",
         "🇮🇹 意大利 (Italy) 02 - vic",
-        "🇮🇹 意大利 (Italy) 03 - vic"
+        "🇮🇹 意大利 (Italy) 03 - vic",
+        "🇮🇹 意大利 (Italy) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
