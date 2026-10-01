@@ -5,29 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - vic
-  server: 85.192.48.142
-  port: 443
+  server: 185.87.24.169
+  port: 2085
   udp: true
   type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: ''
+  uuid: ddceeb62-b629-4163-b4fb-a6fab21054b4
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 02 - vic
+  server: 93.190.8.118
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ddceeb62-b629-4163-b4fb-a6fab21054b4
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 03 - vic
+  server: 178.83.46.216
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - vic
+  - 🇹🇷 土耳其 (Turkey) 02 - vic
+  - 🇹🇷 土耳其 (Turkey) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - vic
+  - 🇹🇷 土耳其 (Turkey) 02 - vic
+  - 🇹🇷 土耳其 (Turkey) 03 - vic
 rules:
 - MATCH,PROXIES

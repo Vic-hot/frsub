@@ -5,31 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - vic
-  server: 45.149.147.97
+  server: 65.109.28.164
   port: 443
   udp: true
   type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: ''
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 02 - vic
-  server: 65.109.199.174
+  server: 144.31.212.253
   port: 443
   udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - vic
+  server: smart.avenone.ir
+  port: 1085
+  udp: true
   type: vless
-  uuid: 3ba22938-7323-48ef-a981-7092171dc60e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
-    short-id: 7a0300af51a1c4cf
-  servername: Miro.com
-  client-fingerprint: chrome
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - vic
   - 🇫🇮 芬兰 (Finland) 02 - vic
+  - 🇫🇮 芬兰 (Finland) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - vic
   - 🇫🇮 芬兰 (Finland) 02 - vic
+  - 🇫🇮 芬兰 (Finland) 03 - vic
 rules:
 - MATCH,PROXIES

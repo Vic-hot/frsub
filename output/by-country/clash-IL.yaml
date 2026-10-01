@@ -32,11 +32,11 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03 - vic
   server: 31.57.185.82
-  port: 23114
+  port: 27797
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
-  password: vS/2+E2vOG1C68QgmugNLDAxJqtGQeIJVI8lUu20n9Y=
+  password: ad8eqTJ4pcXibDSIE/90ObnHNABLoVO8Gzpq6DlGTGc=:rN//WmXR71iKTF+NlcmOg+EmbFVsxLUcxAI1YdWKOhE=
 proxy-groups:
 - name: PROXIES
   type: select

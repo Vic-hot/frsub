@@ -5,21 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - vic
-  server: 172.67.147.209
-  port: 443
+  server: 153.76.185.108
+  port: 3090
   udp: true
   type: vless
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
-  tls: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
-    headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
+  uuid: 14e227c3-5a83-4b4d-a41a-e5f499c79415
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 02 - vic
+  server: 194.87.59.20
+  port: 2085
+  udp: true
+  type: vless
+  uuid: a641fd38-0ad7-40bf-9a56-6715c1787be3
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - vic
   server: 195.133.66.229
   port: 443
   udp: true
@@ -40,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - vic
   - 🇨🇿 捷克 (Czech) 02 - vic
+  - 🇨🇿 捷克 (Czech) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - vic
   - 🇨🇿 捷克 (Czech) 02 - vic
+  - 🇨🇿 捷克 (Czech) 03 - vic
 rules:
 - MATCH,PROXIES
