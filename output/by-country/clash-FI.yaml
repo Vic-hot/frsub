@@ -5,19 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - vic
-  server: 65.109.28.164
-  port: 443
+  server: 77.42.20.51
+  port: 1085
   udp: true
   type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+- name: 🇫🇮 芬兰 (Finland) 02 - vic
+  server: 144.31.232.216
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
+  sni: fi01.clgate.network
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - vic
+  server: 144.31.27.215
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - vic
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - vic
   server: 144.31.212.253
   port: 443
   udp: true
@@ -25,12 +39,6 @@ proxies:
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 03 - vic
-  server: smart.avenone.ir
-  port: 1085
-  udp: true
-  type: vless
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +47,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - vic
   - 🇫🇮 芬兰 (Finland) 02 - vic
   - 🇫🇮 芬兰 (Finland) 03 - vic
+  - 🇫🇮 芬兰 (Finland) 04 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +56,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - vic
   - 🇫🇮 芬兰 (Finland) 02 - vic
   - 🇫🇮 芬兰 (Finland) 03 - vic
+  - 🇫🇮 芬兰 (Finland) 04 - vic
 rules:
 - MATCH,PROXIES

@@ -5,37 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - vic
-  server: 153.76.185.108
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 14e227c3-5a83-4b4d-a41a-e5f499c79415
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 02 - vic
-  server: 194.87.59.20
-  port: 2085
-  udp: true
-  type: vless
-  uuid: a641fd38-0ad7-40bf-9a56-6715c1787be3
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - vic
-  server: 195.133.66.229
+  server: 188.114.96.8
   port: 443
   udp: true
-  type: vless
-  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
-  tls: true
-  reality-opts:
-    public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
-  servername: nlll.gaz-service.shop
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  type: trojan
+  password: Telegram_healer_config
+  sni: y9p34jpjmqjazaypf.piiwddilxjcqehr17af22u7xk-yu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/1nWXnOaq1ajP7PKxbRS7Sdck48oy?ed=2560
+- name: 🇨🇿 捷克 (Czech) 02 - vic
+  server: 153.76.190.41
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 3a92b39a-5f02-415e-a908-783ec320e83f
+  sni: speedtestmark.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - vic
   - 🇨🇿 捷克 (Czech) 02 - vic
-  - 🇨🇿 捷克 (Czech) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - vic
   - 🇨🇿 捷克 (Czech) 02 - vic
-  - 🇨🇿 捷克 (Czech) 03 - vic
 rules:
 - MATCH,PROXIES

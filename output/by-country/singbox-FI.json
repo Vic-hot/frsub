@@ -6,27 +6,46 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - vic",
-      "server": "65.109.28.164",
+      "server": "77.42.20.51",
+      "server_port": 1085,
+      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - vic",
+      "server": "144.31.232.216",
       "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "password": "06e88dd6-e264-4981-8c26-d7ab17348ab2",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi01.clgate.network",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - vic",
+      "server": "144.31.27.215",
+      "server_port": 43000,
+      "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.eitaa.com",
+        "server_name": "144.31.27.215",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
+          "public_key": "dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg",
+          "short_id": "568d87a47271344e"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - vic",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - vic",
       "server": "144.31.212.253",
       "server_port": 443,
       "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
@@ -37,20 +56,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - vic",
-      "server": "smart.avenone.ir",
-      "server_port": 1085,
-      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - vic",
         "🇫🇮 芬兰 (Finland) 02 - vic",
-        "🇫🇮 芬兰 (Finland) 03 - vic"
+        "🇫🇮 芬兰 (Finland) 03 - vic",
+        "🇫🇮 芬兰 (Finland) 04 - vic"
       ]
     },
     {
@@ -59,7 +72,8 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - vic",
         "🇫🇮 芬兰 (Finland) 02 - vic",
-        "🇫🇮 芬兰 (Finland) 03 - vic"
+        "🇫🇮 芬兰 (Finland) 03 - vic",
+        "🇫🇮 芬兰 (Finland) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

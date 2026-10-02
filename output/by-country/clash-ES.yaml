@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - vic
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 02 - vic
   server: 66.163.118.73
   port: 22324
   udp: true
@@ -19,6 +12,13 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 02 - vic
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03 - vic
   server: 140.174.184.5
   port: 8388
@@ -42,6 +42,19 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 05 - vic
+  server: 193.238.154.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  servername: assets-es.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - vic
   - 🇪🇸 西班牙 (Spain) 03 - vic
   - 🇪🇸 西班牙 (Spain) 04 - vic
+  - 🇪🇸 西班牙 (Spain) 05 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +74,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - vic
   - 🇪🇸 西班牙 (Spain) 03 - vic
   - 🇪🇸 西班牙 (Spain) 04 - vic
+  - 🇪🇸 西班牙 (Spain) 05 - vic
 rules:
 - MATCH,PROXIES

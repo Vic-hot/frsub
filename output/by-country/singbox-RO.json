@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - vic",
-      "server": "162.249.127.135",
+      "server": "162.249.127.142",
       "server_port": 8443,
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
@@ -24,24 +24,12 @@
       "tls": {
         "enabled": true,
         "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - vic",
-      "server": "103.126.51.39",
-      "server_port": 8443,
-      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-romania-new.roxa.org",
         "insecure": false
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - vic",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - vic",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -57,19 +45,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - vic",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - vic",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "whatsapp.com",
         "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - vic",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - vic",
       "server": "154.46.31.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -84,8 +72,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - vic",
         "🇷🇴 罗马尼亚 (Romania) 03 - vic",
         "🇷🇴 罗马尼亚 (Romania) 04 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 05 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 06 - vic"
+        "🇷🇴 罗马尼亚 (Romania) 05 - vic"
       ]
     },
     {
@@ -96,8 +83,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - vic",
         "🇷🇴 罗马尼亚 (Romania) 03 - vic",
         "🇷🇴 罗马尼亚 (Romania) 04 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 05 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 06 - vic"
+        "🇷🇴 罗马尼亚 (Romania) 05 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
