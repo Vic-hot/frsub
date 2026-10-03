@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - vic
-  server: 130.49.189.158
-  port: 43558
+  server: 31.76.34.216
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
+  type: vless
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+  servername: ru-c-1.minzt.su
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - vic
   server: 91.240.86.70
   port: 22443
@@ -20,18 +25,24 @@ proxies:
   sni: 91.240.86.70
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - vic
-  server: china.letsconnectpoint.com
-  port: 443
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
+- name: 🇷🇺 俄罗斯 (Russia) 04 - vic
+  server: 45.12.75.242
+  port: 26424
   udp: true
   type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  flow: xtls-rprx-vision
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: random
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +51,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - vic
   - 🇷🇺 俄罗斯 (Russia) 02 - vic
   - 🇷🇺 俄罗斯 (Russia) 03 - vic
+  - 🇷🇺 俄罗斯 (Russia) 04 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +60,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - vic
   - 🇷🇺 俄罗斯 (Russia) 02 - vic
   - 🇷🇺 俄罗斯 (Russia) 03 - vic
+  - 🇷🇺 俄罗斯 (Russia) 04 - vic
 rules:
 - MATCH,PROXIES

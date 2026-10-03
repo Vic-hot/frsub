@@ -4,12 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - vic",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw="
+      "server": "31.76.34.216",
+      "server_port": 443,
+      "uuid": "94def50e-5f3c-4e4c-9719-3325f42d2131",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-c-1.minzt.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "hysteria2",
@@ -24,23 +37,30 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - vic",
-      "server": "china.letsconnectpoint.com",
-      "server_port": 443,
-      "uuid": "914f3806-07a1-4158-9624-e183de065a38",
-      "flow": "xtls-rprx-vision",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - vic",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "china.letsconnectpoint.com",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI",
-          "short_id": "3b74d85e"
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -51,7 +71,8 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - vic",
         "🇷🇺 俄罗斯 (Russia) 02 - vic",
-        "🇷🇺 俄罗斯 (Russia) 03 - vic"
+        "🇷🇺 俄罗斯 (Russia) 03 - vic",
+        "🇷🇺 俄罗斯 (Russia) 04 - vic"
       ]
     },
     {
@@ -60,7 +81,8 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - vic",
         "🇷🇺 俄罗斯 (Russia) 02 - vic",
-        "🇷🇺 俄罗斯 (Russia) 03 - vic"
+        "🇷🇺 俄罗斯 (Russia) 03 - vic",
+        "🇷🇺 俄罗斯 (Russia) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

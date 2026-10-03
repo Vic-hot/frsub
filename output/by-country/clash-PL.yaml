@@ -5,19 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - vic
-  server: 95.85.253.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-  servername: pl0001.kubservice.icu
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - vic
-  server: pl.srv.vbuste-bot.com
+  server: 144.31.4.193
   port: 444
   udp: true
   type: vless
@@ -27,12 +15,20 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
     short-id: 4be4110078ebed4a
   servername: pl.srv.vbuste-bot.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 02 - vic
+  server: 222.167.245.240
+  port: 28015
+  udp: true
+  type: hysteria2
+  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  sni: api-test-udp-traffic.kaneki.cfd
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 03 - vic
-  server: proxy3.h1guro.ovh
+  server: 95.85.227.241
   port: 443
   udp: true
   type: vless
@@ -43,20 +39,8 @@ proxies:
     public-key: dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo
     short-id: 25934afbedc65791
   servername: proxy3d.h1guro.ovh
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - vic
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - vic
   server: 83.168.95.145
   port: 443
   udp: true
@@ -69,7 +53,7 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - vic
+- name: 🇵🇱 波兰 (Poland) 05 - vic
   server: 202.78.163.237
   port: 443
   udp: true
@@ -77,7 +61,27 @@ proxies:
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - vic
+  server: 144.31.49.47
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - vic
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 08 - vic
   server: 188.114.96.19
   port: 80
   udp: true
@@ -90,32 +94,14 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 08 - vic
-  server: 149.86.227.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: waypoint.connectserverix.com
-  client-fingerprint: safari
 - name: 🇵🇱 波兰 (Poland) 09 - vic
-  server: 188.225.79.44
+  server: pl.tronsg.com
   port: 443
   udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: eh.vk.ru
-  client-fingerprint: firefox
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

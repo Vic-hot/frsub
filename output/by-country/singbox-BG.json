@@ -15,25 +15,17 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - vic",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - vic",
       "server": "213.183.63.60",
-      "server_port": 9028,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - vic",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "selector",
@@ -42,8 +34,7 @@
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - vic",
         "🇧🇬 保加利亚 (Bulgaria) 02 - vic",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - vic",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - vic"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - vic"
       ]
     },
     {
@@ -52,8 +43,7 @@
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - vic",
         "🇧🇬 保加利亚 (Bulgaria) 02 - vic",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - vic",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - vic"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
