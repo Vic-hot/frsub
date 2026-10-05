@@ -5,30 +5,109 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - vic
-  server: 222.167.245.240
-  port: 28015
-  udp: true
-  type: hysteria2
-  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
-  sni: api-test-udp-traffic.kaneki.cfd
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 02 - vic
-  server: cheerful-swan.rooster465.autos
+  server: 138.124.104.2
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
+  type: vless
+  uuid: 3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b
+  tls: true
+  reality-opts:
+    public-key: tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI
+  servername: samsung.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
+- name: 🇵🇱 波兰 (Poland) 02 - vic
+  server: 95.85.254.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b
+  tls: true
+  reality-opts:
+    public-key: tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI
+  servername: samsung.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
 - name: 🇵🇱 波兰 (Poland) 03 - vic
-  server: 144.31.49.47
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04 - vic
+  server: 70.34.252.154
+  port: 80
+  udp: true
+  type: vless
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 05 - vic
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 06 - vic
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - vic
+- name: 🇵🇱 波兰 (Poland) 07 - vic
+  server: 50.7.249.138
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: polkadotnewone.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 08 - vic
+  server: 50.7.249.155
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-good.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 09 - vic
+  server: 202.78.163.237
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 10 - vic
+  server: 50.7.249.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pol-pol-poland.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 11 - vic
   server: 188.114.96.19
   port: 80
   udp: true
@@ -41,7 +120,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 05 - vic
+- name: 🇵🇱 波兰 (Poland) 12 - vic
   server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
@@ -53,6 +132,18 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 13 - vic
+  server: iiproxy8.iiproxy.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  tls: true
+  servername: iiproxy8.iiproxy.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +154,14 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - vic
   - 🇵🇱 波兰 (Poland) 04 - vic
   - 🇵🇱 波兰 (Poland) 05 - vic
+  - 🇵🇱 波兰 (Poland) 06 - vic
+  - 🇵🇱 波兰 (Poland) 07 - vic
+  - 🇵🇱 波兰 (Poland) 08 - vic
+  - 🇵🇱 波兰 (Poland) 09 - vic
+  - 🇵🇱 波兰 (Poland) 10 - vic
+  - 🇵🇱 波兰 (Poland) 11 - vic
+  - 🇵🇱 波兰 (Poland) 12 - vic
+  - 🇵🇱 波兰 (Poland) 13 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +172,13 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - vic
   - 🇵🇱 波兰 (Poland) 04 - vic
   - 🇵🇱 波兰 (Poland) 05 - vic
+  - 🇵🇱 波兰 (Poland) 06 - vic
+  - 🇵🇱 波兰 (Poland) 07 - vic
+  - 🇵🇱 波兰 (Poland) 08 - vic
+  - 🇵🇱 波兰 (Poland) 09 - vic
+  - 🇵🇱 波兰 (Poland) 10 - vic
+  - 🇵🇱 波兰 (Poland) 11 - vic
+  - 🇵🇱 波兰 (Poland) 12 - vic
+  - 🇵🇱 波兰 (Poland) 13 - vic
 rules:
 - MATCH,PROXIES

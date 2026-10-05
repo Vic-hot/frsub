@@ -4,26 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - vic
-  server: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic
+  server: argo6.5671234.xyz
   port: 443
   udp: true
-  type: hysteria2
-  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-  sni: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
+  servername: argo6.5671234.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - vic
+  network: ws
+  ws-opts:
+    path: /e8e2cecb6188f7fb
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - vic
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -34,16 +28,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - vic
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - vic
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - vic
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - vic
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - vic
 rules:
 - MATCH,PROXIES

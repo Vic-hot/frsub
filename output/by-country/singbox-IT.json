@@ -4,27 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 01 - vic",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇹 意大利 (Italy) 02 - vic",
+      "server": "89.41.172.85",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 03 - vic",
+      "server": "91.201.65.122",
+      "server_port": 9070,
+      "method": "aes-256-cfb",
+      "password": "bf7v334KKDV3YDhH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 04 - vic",
       "server": "185.164.175.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - vic",
-      "server": "91.201.65.122",
-      "server_port": 9053,
-      "method": "aes-256-cfb",
-      "password": "SBM7R883jBmnqe6C"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 03 - vic",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
     },
     {
       "type": "selector",
@@ -33,7 +41,8 @@
         "auto",
         "🇮🇹 意大利 (Italy) 01 - vic",
         "🇮🇹 意大利 (Italy) 02 - vic",
-        "🇮🇹 意大利 (Italy) 03 - vic"
+        "🇮🇹 意大利 (Italy) 03 - vic",
+        "🇮🇹 意大利 (Italy) 04 - vic"
       ]
     },
     {
@@ -42,7 +51,8 @@
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - vic",
         "🇮🇹 意大利 (Italy) 02 - vic",
-        "🇮🇹 意大利 (Italy) 03 - vic"
+        "🇮🇹 意大利 (Italy) 03 - vic",
+        "🇮🇹 意大利 (Italy) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
