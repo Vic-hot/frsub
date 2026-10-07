@@ -4,18 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 01 - vic",
-      "server": "70.34.252.154",
+      "server": "45.192.12.93",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - vic",
+      "server": "70.34.255.101",
       "server_port": 80,
-      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
+      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
       "transport": {
         "type": "ws"
       }
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 02 - vic",
+      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
       "server": "202.78.163.237",
       "server_port": 443,
       "password": "UX82473651",
@@ -27,50 +39,60 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
-      "server": "31.77.13.19",
-      "server_port": 2063,
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
+      "server": "70.34.252.154",
+      "server_port": 80,
+      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 05 - vic",
+      "server": "177.1.192.72",
+      "server_port": 443,
+      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rusbid.de",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "randomized"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
-          "short_id": ""
+          "public_key": "y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM",
+          "short_id": "46455ff0"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
-      "server": "83.168.107.220",
-      "server_port": 443,
-      "uuid": "b1813cbd-831f-4cb3-baf8-5bc0cc8298bc",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇵🇱 波兰 (Poland) 06 - vic",
+      "server": "78.17.109.97",
+      "server_port": 6443,
+      "uuid": "dfe8ea9e-fd77-48e6-86ee-7bc1019de1e7",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "ok.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo",
-          "short_id": "c56d4f1c"
+          "public_key": "NP5_ymQeqYr_EP7aAPIl3YBRghX60zLq6m74Ht4bFUI",
+          "short_id": "2c043ed8"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 05 - vic",
-      "server": "144.31.49.47",
+      "tag": "🇵🇱 波兰 (Poland) 07 - vic",
+      "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
@@ -80,17 +102,23 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 06 - vic",
-      "server": "188.114.96.19",
-      "server_port": 80,
-      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 08 - vic",
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
         }
       }
     },
@@ -104,7 +132,9 @@
         "🇵🇱 波兰 (Poland) 03 - vic",
         "🇵🇱 波兰 (Poland) 04 - vic",
         "🇵🇱 波兰 (Poland) 05 - vic",
-        "🇵🇱 波兰 (Poland) 06 - vic"
+        "🇵🇱 波兰 (Poland) 06 - vic",
+        "🇵🇱 波兰 (Poland) 07 - vic",
+        "🇵🇱 波兰 (Poland) 08 - vic"
       ]
     },
     {
@@ -116,7 +146,9 @@
         "🇵🇱 波兰 (Poland) 03 - vic",
         "🇵🇱 波兰 (Poland) 04 - vic",
         "🇵🇱 波兰 (Poland) 05 - vic",
-        "🇵🇱 波兰 (Poland) 06 - vic"
+        "🇵🇱 波兰 (Poland) 06 - vic",
+        "🇵🇱 波兰 (Poland) 07 - vic",
+        "🇵🇱 波兰 (Poland) 08 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
