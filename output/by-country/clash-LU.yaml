@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - vic
-  server: s3.huhiuh.space
-  port: 18642
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - vic
+  server: 188.42.145.180
+  port: 443
   udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
+  type: trojan
+  password: humanity
+  sni: www.volumeroot.com
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - vic
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - vic
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - vic
 rules:
 - MATCH,PROXIES

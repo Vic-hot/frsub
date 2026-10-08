@@ -12,25 +12,18 @@ proxies:
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - name: 🇮🇹 意大利 (Italy) 02 - vic
   server: 91.201.65.122
-  port: 9059
+  port: 9074
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
+  password: p5wSkb2uM3pKSS3j
 - name: 🇮🇹 意大利 (Italy) 03 - vic
   server: 91.201.65.122
-  port: 9039
+  port: 9065
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇮🇹 意大利 (Italy) 04 - vic
-  server: 91.201.65.122
-  port: 9097
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Sn5B7jTqr76aCJT8
+  password: PeHSHm5SqEjBuEXE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +32,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - vic
   - 🇮🇹 意大利 (Italy) 02 - vic
   - 🇮🇹 意大利 (Italy) 03 - vic
-  - 🇮🇹 意大利 (Italy) 04 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +40,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - vic
   - 🇮🇹 意大利 (Italy) 02 - vic
   - 🇮🇹 意大利 (Italy) 03 - vic
-  - 🇮🇹 意大利 (Italy) 04 - vic
 rules:
 - MATCH,PROXIES
