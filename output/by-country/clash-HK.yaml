@@ -5,6 +5,78 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - vic
+  server: 156.224.77.171
+  port: 9443
+  udp: true
+  type: vless
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - vic
+  server: 34.92.19.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  tls: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - vic
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - vic
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - vic
+  server: full-ox.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: full-ox.rooster465.autos
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - vic
+  server: 130.94.33.80
+  port: 443
+  udp: true
+  type: vless
+  uuid: 365bebc8-894e-424f-95bf-7edbef311b23
+  tls: true
+  servername: hk.sepporated.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: hk.sepporated.com
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - vic
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - vic
   server: 82.29.36.250
   port: 443
   udp: true
@@ -17,49 +89,50 @@ proxies:
     short-id: 09353d6dc5b789
   servername: aws.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - vic
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - vic
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүёрҹүі
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - vic
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - vic
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - vic
   server: 2.27.109.179
   port: 45464
   udp: true
   type: trojan
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - vic
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: jmp1.907737.xyz
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - vic
-  server: 47.238.210.5
-  port: 13779
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - vic
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - vic
+  server: 154.37.216.186
+  port: 443
   udp: true
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  servername: www.bing.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -72,6 +145,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - vic
   - 🇭🇰 中国香港 (Hong Kong) 05 - vic
   - 🇭🇰 中国香港 (Hong Kong) 06 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 07 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 08 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 09 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 10 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 11 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 12 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +162,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - vic
   - 🇭🇰 中国香港 (Hong Kong) 05 - vic
   - 🇭🇰 中国香港 (Hong Kong) 06 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 07 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 08 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 09 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 10 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 11 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 12 - vic
 rules:
 - MATCH,PROXIES
