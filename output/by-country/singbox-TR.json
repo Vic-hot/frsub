@@ -5,25 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - vic",
-      "server": "104.21.16.152",
-      "server_port": 443,
-      "uuid": "3d841cdf-f91e-4f3b-a315-c18edcbd2606",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - vic",
+      "server": "62.60.233.157",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
       "tls": {
         "enabled": true,
-        "server_name": "jeffsubs.com",
-        "insecure": false,
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/nnuyws",
-        "headers": {
-          "Host": "jeffsubs.com"
-        }
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -31,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - vic"
+        "🇹🇷 土耳其 (Turkey) 01 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - vic"
+        "🇹🇷 土耳其 (Turkey) 01 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
