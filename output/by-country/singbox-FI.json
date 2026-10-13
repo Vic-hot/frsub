@@ -6,6 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - vic",
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - vic",
       "server": "185.103.110.66",
       "server_port": 18280,
       "method": "aes-128-gcm",
@@ -13,100 +21,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - vic",
-      "server": "170.168.4.59",
-      "server_port": 17170,
-      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "northerntrail.gazette.help",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "trail-grpc"
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 03 - vic",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - vic",
-      "server": "109.172.54.135",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - vic",
-      "server": "85.209.129.5",
+      "server": "tundra.venorix.online",
       "server_port": 443,
-      "password": "muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA",
-      "tls": {
-        "enabled": true,
-        "server_name": "fl.global-cdn.org",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ajv"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - vic",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "uuid": "6c21cf57-a9a9-4075-ad9f-631152bd911e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.eitaa.com",
+        "server_name": "tundra.venorix.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
+          "public_key": "IHm9_n5a0hMAvgclNtwWpNpq68Xdj9-Q5NG3eLkcFjE",
+          "short_id": "52fe21c959620cd8"
         }
       }
     },
@@ -118,9 +55,7 @@
         "🇫🇮 芬兰 (Finland) 01 - vic",
         "🇫🇮 芬兰 (Finland) 02 - vic",
         "🇫🇮 芬兰 (Finland) 03 - vic",
-        "🇫🇮 芬兰 (Finland) 04 - vic",
-        "🇫🇮 芬兰 (Finland) 05 - vic",
-        "🇫🇮 芬兰 (Finland) 06 - vic"
+        "🇫🇮 芬兰 (Finland) 04 - vic"
       ]
     },
     {
@@ -130,9 +65,7 @@
         "🇫🇮 芬兰 (Finland) 01 - vic",
         "🇫🇮 芬兰 (Finland) 02 - vic",
         "🇫🇮 芬兰 (Finland) 03 - vic",
-        "🇫🇮 芬兰 (Finland) 04 - vic",
-        "🇫🇮 芬兰 (Finland) 05 - vic",
-        "🇫🇮 芬兰 (Finland) 06 - vic"
+        "🇫🇮 芬兰 (Finland) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

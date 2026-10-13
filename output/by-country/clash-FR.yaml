@@ -5,49 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - vic
-  server: 37.49.230.85
-  port: 8443
+  server: 163.172.105.146
+  port: 16182
   udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: fr5.sodahub.online
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fr5grpc
+  type: ss
+  cipher: aes-128-gcm
+  password: 89c5a923591362960f6832eaa48df5fa
 - name: 🇫🇷 法国 (France) 02 - vic
-  server: pl134.vpnbook.com
+  server: 54.36.174.140
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
 - name: 🇫🇷 法国 (France) 03 - vic
-  server: 104.19.229.21
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 04 - vic
+  server: 13.36.234.11
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 04 - vic
-  server: fr4.sodahub.online
-  port: 8443
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.36.234.11
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 05 - vic
+  server: 51.44.167.227
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - vic
+  server: 51.255.166.202
+  port: 443
   udp: true
   type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  flow: xtls-rprx-vision
   tls: true
-  servername: fr4.sodahub.online
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fr4grpc
-- name: 🇫🇷 法国 (France) 05 - vic
+- name: 🇫🇷 法国 (France) 07 - vic
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - vic
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -60,55 +73,7 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - vic
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 07 - vic
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: e3k67dwms3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - vic
-  server: 13.36.234.11
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 13.36.234.11
-  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 09 - vic
-  server: 185.114.72.31
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 10 - vic
-  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: rgiw5k0gg5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 11 - vic
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -121,7 +86,50 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 10 - vic
+  server: 141.193.213.172
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 11 - vic
+  server: 51.255.165.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  skip-cert-verify: false
 - name: 🇫🇷 法国 (France) 12 - vic
+  server: 152.228.139.33
+  port: 35108
+  udp: true
+  type: vless
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+  tls: true
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-common3
+- name: 🇫🇷 法国 (France) 13 - vic
+  server: 51.255.13.232
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 14 - vic
   server: 54.37.136.194
   port: 2053
   udp: true
@@ -132,89 +140,73 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 13 - vic
-  server: 193.70.85.96
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58756a39-0472-5f8a-89e3-a80fa94af59e
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 14 - vic
-  server: f4.vimeostream.online
-  port: 11443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: f4.vimeostream.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v2/stream/ws
-    headers:
-      Host: f4.vimeostream.online
+  client-fingerprint: random
 - name: 🇫🇷 法国 (France) 15 - vic
-  server: fr5.wizard.select
+  server: pl134.vpnbook.com
   port: 443
   udp: true
-  type: vless
-  uuid: 2acc3742-c568-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU
-    short-id: 984f
-  servername: fr5.wizard.select
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
 - name: 🇫🇷 法国 (France) 16 - vic
-  server: 8.47.69.0
+  server: 185.114.72.31
   port: 2053
   udp: true
-  type: vless
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  tls: true
-  servername: vless.api-music-fa.com
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
-  client-fingerprint: qq
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
+    path: /assignment
 - name: 🇫🇷 法国 (France) 17 - vic
-  server: 88.151.197.213
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 18 - vic
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 19 - vic
+  server: 104.21.72.47
   port: 443
   udp: true
   type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  tls: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 20 - vic
+  server: 149.202.57.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: rgiw5k0gg5
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 7gPPAdSE90GC5DWQhNH3-7oAHulpWz6iN8dIuKfBflc
-    short-id: 0da7e14db353e7d0
-  servername: frafra.nztvpn.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 18 - vic
-  server: 79.174.92.222
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
-  tls: true
-  reality-opts:
-    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
-    short-id: a1b2c3d4
-  servername: m.vk.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -238,6 +230,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 16 - vic
   - 🇫🇷 法国 (France) 17 - vic
   - 🇫🇷 法国 (France) 18 - vic
+  - 🇫🇷 法国 (France) 19 - vic
+  - 🇫🇷 法国 (France) 20 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -261,5 +255,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 16 - vic
   - 🇫🇷 法国 (France) 17 - vic
   - 🇫🇷 法国 (France) 18 - vic
+  - 🇫🇷 法国 (France) 19 - vic
+  - 🇫🇷 法国 (France) 20 - vic
 rules:
 - MATCH,PROXIES
