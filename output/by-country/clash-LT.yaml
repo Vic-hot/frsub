@@ -6,27 +6,20 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - vic
   server: 195.238.126.20
-  port: 9008
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - vic
   server: 195.238.126.20
-  port: 9002
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - vic
-  server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - vic
-  server: 80.209.237.144
+  server: b58e68t.lt1.h1clayd.click
   port: 443
   udp: true
   type: vless
@@ -36,7 +29,7 @@ proxies:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
     short-id: 2301ac8aee8bf6d4
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: ''
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +38,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 01 - vic
   - 🇱🇹 立陶宛 (Lithuania) 02 - vic
   - 🇱🇹 立陶宛 (Lithuania) 03 - vic
-  - 🇱🇹 立陶宛 (Lithuania) 04 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +46,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 01 - vic
   - 🇱🇹 立陶宛 (Lithuania) 02 - vic
   - 🇱🇹 立陶宛 (Lithuania) 03 - vic
-  - 🇱🇹 立陶宛 (Lithuania) 04 - vic
 rules:
 - MATCH,PROXIES
