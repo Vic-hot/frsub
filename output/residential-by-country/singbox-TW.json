@@ -4,28 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-      "server": "fujrdt.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "fujrdt.d6f54hd1j.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "fujrdt.d6f54hd1j.cc"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -34,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -48,16 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
