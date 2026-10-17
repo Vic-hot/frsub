@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - vic
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - vic
   server: 84.32.109.20
   port: 443
   udp: true
@@ -24,6 +17,13 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
   client-fingerprint: chrome
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - vic
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
 proxy-groups:
 - name: PROXIES
   type: select

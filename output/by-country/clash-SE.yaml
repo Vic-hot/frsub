@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - vic
-  server: 88.216.223.66
-  port: 443
-  udp: true
-  type: vless
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: tcpswed1.figurapn.ru
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 02 - vic
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -27,7 +15,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - vic
+- name: 🇸🇪 瑞典 (Sweden) 02 - vic
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -42,19 +30,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 04 - vic
-  server: swe.wizard.select
+- name: 🇸🇪 瑞典 (Sweden) 03 - vic
+  server: 45.12.63.219
   port: 443
   udp: true
   type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
   tls: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: qq
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +51,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - vic
   - 🇸🇪 瑞典 (Sweden) 02 - vic
   - 🇸🇪 瑞典 (Sweden) 03 - vic
-  - 🇸🇪 瑞典 (Sweden) 04 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,6 +59,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - vic
   - 🇸🇪 瑞典 (Sweden) 02 - vic
   - 🇸🇪 瑞典 (Sweden) 03 - vic
-  - 🇸🇪 瑞典 (Sweden) 04 - vic
 rules:
 - MATCH,PROXIES
