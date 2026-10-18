@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇾 白俄罗斯 (Belarus) 01 - vic
-  server: 95.128.71.79
-  port: 14430
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - vic
+  server: 183.109.131.75
+  port: 20086
   udp: true
-  type: vless
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 95.128.71.79
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇾 白俄罗斯 (Belarus) 01 - vic
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇾 白俄罗斯 (Belarus) 01 - vic
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - vic
 rules:
 - MATCH,PROXIES
