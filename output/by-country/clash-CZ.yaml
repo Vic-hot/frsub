@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - vic
-  server: 103.200.28.124
-  port: 8478
-  udp: true
-  type: vless
-  uuid: 4cb9157c-cd6f-451f-b786-1c92edec32cb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: n3BiVX_oDQXcqC0OmOm5o0RuOaXoHHhdiQ2s-xqkayA
-    short-id: d7c8227902c1d878
-  servername: ru.tradingview.com
-  client-fingerprint: qq
-- name: 🇨🇿 捷克 (Czech) 02 - vic
-  server: 81.28.12.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
-  tls: true
-  servername: node-3.wt419.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
-    headers:
-      Host: node-3.wt419.site
-- name: 🇨🇿 捷克 (Czech) 03 - vic
   server: 67.159.18.34
   port: 17001
   udp: true
@@ -45,15 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - vic
-  - 🇨🇿 捷克 (Czech) 02 - vic
-  - 🇨🇿 捷克 (Czech) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - vic
-  - 🇨🇿 捷克 (Czech) 02 - vic
-  - 🇨🇿 捷克 (Czech) 03 - vic
 rules:
 - MATCH,PROXIES

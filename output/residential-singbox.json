@@ -4,58 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - vic",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) R46 - vic",
+      "server": "4c2d5151.266nets.com",
+      "server_port": 12031,
+      "password": "bad06c3525a6eaee1757b34776b83892",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - vic",
-      "server": "183.109.131.75",
-      "server_port": 20086,
-      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - vic",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - vic",
-      "server": "206.1.100.148",
-      "server_port": 8443,
-      "uuid": "53373a04-2dd2-472e-af5d-d55fbffa7dbd",
-      "tls": {
-        "enabled": true,
-        "server_name": "game.jafarghasemivip.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "ixigua.com",
+        "insecure": true
       }
     },
     {
@@ -63,20 +28,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - vic",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - vic",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - vic"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - vic",
+        "🇺🇸 美国 (United States) 02 (家宽) R46 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - vic",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - vic",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - vic"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - vic",
+        "🇺🇸 美国 (United States) 02 (家宽) R46 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
