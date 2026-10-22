@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - vic
+  server: 35.180.76.81
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 02 - vic
+  server: 51.44.38.228
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 03 - vic
   server: 13.36.234.11
   port: 443
   udp: true
@@ -12,15 +24,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-fr-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 02 - vic
-  server: 51.44.167.227
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - vic
+- name: 🇫🇷 法国 (France) 04 - vic
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -33,28 +37,7 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 04 - vic
-  server: 62.210.91.2
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 05 - vic
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - vic
   server: 62.210.7.139
   port: 60111
   udp: true
@@ -62,19 +45,15 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   sni: 62.210.7.139
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 07 - vic
-  server: 51.77.217.70
-  port: 2053
+- name: 🇫🇷 法国 (France) 06 - vic
+  server: 62.210.124.146
+  port: 22000
   udp: true
-  type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  tls: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 08 - vic
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07 - vic
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -89,6 +68,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
+- name: 🇫🇷 法国 (France) 08 - vic
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: 🇫🇷 法国 (France) 09 - vic
   server: 152.228.139.33
   port: 35108
@@ -105,25 +95,19 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-common3
 - name: 🇫🇷 法国 (France) 10 - vic
-  server: 104.16.71.213
+  server: 161.97.160.224
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  servername: passport.yandex.ru
+  client-fingerprint: ''
 - name: 🇫🇷 法国 (France) 11 - vic
-  server: 173.212.201.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 173.212.201.85
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 12 - vic
   server: 145.239.55.210
   port: 80
   udp: true
@@ -136,19 +120,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 13 - vic
-  server: 161.97.160.224
-  port: 443
-  udp: true
-  type: vless
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -165,8 +136,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - vic
   - 🇫🇷 法国 (France) 10 - vic
   - 🇫🇷 法国 (France) 11 - vic
-  - 🇫🇷 法国 (France) 12 - vic
-  - 🇫🇷 法国 (France) 13 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -183,7 +152,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - vic
   - 🇫🇷 法国 (France) 10 - vic
   - 🇫🇷 法国 (France) 11 - vic
-  - 🇫🇷 法国 (France) 12 - vic
-  - 🇫🇷 法国 (France) 13 - vic
 rules:
 - MATCH,PROXIES

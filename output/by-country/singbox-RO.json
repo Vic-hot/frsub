@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "de1.dedushka.top",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -28,12 +28,25 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - vic",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 02 - vic"
+        "🇷🇴 罗马尼亚 (Romania) 02 - vic",
+        "🇷🇴 罗马尼亚 (Romania) 03 - vic"
       ]
     },
     {
@@ -41,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 02 - vic"
+        "🇷🇴 罗马尼亚 (Romania) 02 - vic",
+        "🇷🇴 罗马尼亚 (Romania) 03 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
