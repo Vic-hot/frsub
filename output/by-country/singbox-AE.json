@@ -4,8 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - vic",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - vic",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - vic",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -18,24 +45,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - vic",
-      "server": "147.45.42.73",
-      "server_port": 20443,
-      "uuid": "f293db4d-7ab1-4faf-bb15-89540d8709cb",
-      "tls": {
-        "enabled": true,
-        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - vic",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/vless",
         "headers": {
-          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+          "Host": "95.174.68.188"
         }
       }
     },
@@ -45,7 +63,9 @@
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - vic",
-        "🇦🇪 阿联酋 (UAE) 02 - vic"
+        "🇦🇪 阿联酋 (UAE) 02 - vic",
+        "🇦🇪 阿联酋 (UAE) 03 - vic",
+        "🇦🇪 阿联酋 (UAE) 04 - vic"
       ]
     },
     {
@@ -53,7 +73,9 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - vic",
-        "🇦🇪 阿联酋 (UAE) 02 - vic"
+        "🇦🇪 阿联酋 (UAE) 02 - vic",
+        "🇦🇪 阿联酋 (UAE) 03 - vic",
+        "🇦🇪 阿联酋 (UAE) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

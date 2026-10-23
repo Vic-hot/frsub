@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - vic
+  server: 51.161.204.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 02 - vic
   server: funagfrdfs.alixxplay.com
   port: 54528
   udp: true
@@ -17,19 +30,17 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 02 - vic
-  server: 51.161.204.244
-  port: 443
+- name: 🇦🇺 澳大利亚 (Australia) 03 - vic
+  server: forwarded.frnhk.xyz
+  port: 46004
   udp: true
   type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
+  network: ws
+  ws-opts:
+    path: /aus1023
+    headers:
+      Host: forwarded.frnhk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - vic
   - 🇦🇺 澳大利亚 (Australia) 02 - vic
+  - 🇦🇺 澳大利亚 (Australia) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - vic
   - 🇦🇺 澳大利亚 (Australia) 02 - vic
+  - 🇦🇺 澳大利亚 (Australia) 03 - vic
 rules:
 - MATCH,PROXIES
