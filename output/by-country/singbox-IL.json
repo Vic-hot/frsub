@@ -25,28 +25,18 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 02 - vic",
-      "server": "31.57.185.124",
-      "server_port": 25592,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "e4QiDXErSwfetOwV9+oomPA5eHHcmtDCTMh5uN04kfw=:8MlbBZIgOVdg/m+ZJ3bhK/Mok62XICaLriLWhNMaexw="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - vic",
-        "🇮🇱 以色列 (Israel) 02 - vic"
+        "🇮🇱 以色列 (Israel) 01 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - vic",
-        "🇮🇱 以色列 (Israel) 02 - vic"
+        "🇮🇱 以色列 (Israel) 01 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

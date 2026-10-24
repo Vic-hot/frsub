@@ -24,7 +24,7 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 03 - vic
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -32,8 +32,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - vic
   server: 95.174.68.188
   port: 14430
@@ -45,6 +43,21 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - vic
+  server: 175.41.179.37
+  port: 51262
+  udp: true
+  type: vless
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +67,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - vic
   - 🇦🇪 阿联酋 (UAE) 03 - vic
   - 🇦🇪 阿联酋 (UAE) 04 - vic
+  - 🇦🇪 阿联酋 (UAE) 05 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +77,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - vic
   - 🇦🇪 阿联酋 (UAE) 03 - vic
   - 🇦🇪 阿联酋 (UAE) 04 - vic
+  - 🇦🇪 阿联酋 (UAE) 05 - vic
 rules:
 - MATCH,PROXIES
