@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - vic",
+      "server": "2.26.3.75",
+      "server_port": 443,
+      "password": "d5530551-5e9a-4ac5-8539-cee87e38d9e2",
+      "tls": {
+        "enabled": true,
+        "server_name": "2.26.3.75",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - vic",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -19,17 +31,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - vic",
-      "server": "hw3.divarkhaghazi.com",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - vic",
+      "server": "hw3.divarkhaghazi.com.",
       "server_port": 465,
       "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
       "tls": {
         "enabled": true,
         "server_name": "hw3.divarkhaghazi.com.",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -45,25 +54,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - vic",
-      "server": "finland02.azotvpn.xyz",
-      "server_port": 8443,
-      "uuid": "5a96c1fc-f167-44b9-9020-8f6867537d14",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland02.azotvpn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ",
-          "short_id": "07f508fe5d2355d3"
-        }
-      },
+      "tag": "🇫🇮 芬兰 (Finland) 04 - vic",
+      "server": "193.188.21.253",
+      "server_port": 14430,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "193.188.21.253"
+        }
       }
     },
     {
@@ -73,7 +73,8 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - vic",
         "🇫🇮 芬兰 (Finland) 02 - vic",
-        "🇫🇮 芬兰 (Finland) 03 - vic"
+        "🇫🇮 芬兰 (Finland) 03 - vic",
+        "🇫🇮 芬兰 (Finland) 04 - vic"
       ]
     },
     {
@@ -82,7 +83,8 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - vic",
         "🇫🇮 芬兰 (Finland) 02 - vic",
-        "🇫🇮 芬兰 (Finland) 03 - vic"
+        "🇫🇮 芬兰 (Finland) 03 - vic",
+        "🇫🇮 芬兰 (Finland) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
