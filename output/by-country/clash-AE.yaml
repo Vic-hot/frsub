@@ -15,6 +15,29 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - vic
+  server: forshynewh.duckdns.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 03 - vic
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 04 - vic
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -23,10 +46,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 03 - vic
-  server: 84.235.244.108
+- name: 🇦🇪 阿联酋 (UAE) 05 - vic
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -34,17 +55,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - vic
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +64,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - vic
   - 🇦🇪 阿联酋 (UAE) 03 - vic
   - 🇦🇪 阿联酋 (UAE) 04 - vic
+  - 🇦🇪 阿联酋 (UAE) 05 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +74,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - vic
   - 🇦🇪 阿联酋 (UAE) 03 - vic
   - 🇦🇪 阿联酋 (UAE) 04 - vic
+  - 🇦🇪 阿联酋 (UAE) 05 - vic
 rules:
 - MATCH,PROXIES

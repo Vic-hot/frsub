@@ -6,13 +6,6 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - vic",
-      "server": "5.22.221.127",
-      "server_port": 443,
-      "uuid": "44dfa3a7-f648-4587-819b-e653c0823f28"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - vic",
       "server": "2.26.6.1",
       "server_port": 2087,
       "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
@@ -28,14 +21,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
+      "tag": "🇵🇱 波兰 (Poland) 02 - vic",
       "server": "77.232.135.141",
       "server_port": 8445,
       "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
       "tls": {
         "enabled": true,
         "server_name": "ru1.radiolumens.uk",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -43,42 +40,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - vic",
-      "server": "tr2.soft10.ir",
-      "server_port": 2053,
-      "uuid": "480b4042-f713-43d7-b24b-b4064c97f841",
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
+      "server": "pl2.shvpn.ru",
+      "server_port": 4443,
+      "password": "c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3",
       "tls": {
         "enabled": true,
-        "server_name": "tr2.soft10.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1",
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "tr2.soft10.ir"
-        }
+        "server_name": "pl2.shvpn.ru",
+        "insecure": false
       }
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 06 - vic",
+      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -92,6 +67,13 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 05 - vic",
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -100,8 +82,7 @@
         "🇵🇱 波兰 (Poland) 02 - vic",
         "🇵🇱 波兰 (Poland) 03 - vic",
         "🇵🇱 波兰 (Poland) 04 - vic",
-        "🇵🇱 波兰 (Poland) 05 - vic",
-        "🇵🇱 波兰 (Poland) 06 - vic"
+        "🇵🇱 波兰 (Poland) 05 - vic"
       ]
     },
     {
@@ -112,8 +93,7 @@
         "🇵🇱 波兰 (Poland) 02 - vic",
         "🇵🇱 波兰 (Poland) 03 - vic",
         "🇵🇱 波兰 (Poland) 04 - vic",
-        "🇵🇱 波兰 (Poland) 05 - vic",
-        "🇵🇱 波兰 (Poland) 06 - vic"
+        "🇵🇱 波兰 (Poland) 05 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

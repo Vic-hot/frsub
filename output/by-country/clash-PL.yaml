@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - vic
-  server: 5.22.221.127
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
-- name: 🇵🇱 波兰 (Poland) 02 - vic
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -20,7 +14,7 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - vic
+- name: 🇵🇱 波兰 (Poland) 02 - vic
   server: 77.232.135.141
   port: 8445
   udp: true
@@ -29,31 +23,19 @@ proxies:
   tls: true
   servername: ru1.radiolumens.uk
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 04 - vic
-  server: site.teslamotor.site
-  port: 20001
+- name: 🇵🇱 波兰 (Poland) 03 - vic
+  server: pl2.shvpn.ru
+  port: 4443
   udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 05 - vic
-  server: tr2.soft10.ir
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
-  tls: true
-  servername: tr2.soft10.ir
+  type: hysteria2
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  sni: pl2.shvpn.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr2.soft10.ir
-- name: 🇵🇱 波兰 (Poland) 06 - vic
+- name: 🇵🇱 波兰 (Poland) 04 - vic
   server: 54.37.131.126
   port: 80
   udp: true
@@ -66,6 +48,12 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 05 - vic
+  server: site.teslamotor.site
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,7 +64,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - vic
   - 🇵🇱 波兰 (Poland) 04 - vic
   - 🇵🇱 波兰 (Poland) 05 - vic
-  - 🇵🇱 波兰 (Poland) 06 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,6 +74,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - vic
   - 🇵🇱 波兰 (Poland) 04 - vic
   - 🇵🇱 波兰 (Poland) 05 - vic
-  - 🇵🇱 波兰 (Poland) 06 - vic
 rules:
 - MATCH,PROXIES
