@@ -4,16 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - vic",
-      "server": "ir-new-ded.failspace.top",
+      "type": "trojan",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - vic",
+      "server": "176.114.95.242",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "password": "UAKWGor-h0woFsxKSWK92HptcM0g2k2h",
       "tls": {
         "enabled": true,
-        "server_name": "ir-new-ded.failspace.top",
-        "insecure": false
+        "server_name": "lt-1.1984.love",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
@@ -21,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - vic"
+        "🇱🇹 立陶宛 (Lithuania) 01 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - vic"
+        "🇱🇹 立陶宛 (Lithuania) 01 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
