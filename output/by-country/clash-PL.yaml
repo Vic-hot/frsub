@@ -11,33 +11,20 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - vic
-  server: 155.117.5.208
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03 - vic
+  server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - vic
-  server: 78.17.128.153
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - vic
-  server: ru1.radiolumens.uk
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 05 - vic
   server: 54.37.131.126
   port: 80
   udp: true
@@ -50,35 +37,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06 - vic
-  server: 92.118.150.146
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 07 - vic
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08 - vic
-  server: 79.182.39.37
-  port: 27591
-  udp: true
-  type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-    short-id: 6c5c7900406a1ae7
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,10 +46,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - vic
   - 🇵🇱 波兰 (Poland) 03 - vic
   - 🇵🇱 波兰 (Poland) 04 - vic
-  - 🇵🇱 波兰 (Poland) 05 - vic
-  - 🇵🇱 波兰 (Poland) 06 - vic
-  - 🇵🇱 波兰 (Poland) 07 - vic
-  - 🇵🇱 波兰 (Poland) 08 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,9 +55,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - vic
   - 🇵🇱 波兰 (Poland) 03 - vic
   - 🇵🇱 波兰 (Poland) 04 - vic
-  - 🇵🇱 波兰 (Poland) 05 - vic
-  - 🇵🇱 波兰 (Poland) 06 - vic
-  - 🇵🇱 波兰 (Poland) 07 - vic
-  - 🇵🇱 波兰 (Poland) 08 - vic
 rules:
 - MATCH,PROXIES

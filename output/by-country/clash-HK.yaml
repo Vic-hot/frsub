@@ -5,19 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - vic
-  server: 45.39.198.144
-  port: 9443
+  server: 202.146.222.174
+  port: 443
   udp: true
-  type: vless
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - vic
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - vic
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - vic
   server: 165.154.63.139
   port: 443
   udp: true
@@ -30,27 +41,29 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - vic
-  server: 202.146.222.89
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - vic
+  server: 195.58.144.56
+  port: 11907
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - vic
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  tls: true
+  servername: 195.58.144.56
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - vic
   server: 103.238.227.211
-  port: 21002
+  port: 21001
   udp: true
   type: vless
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   tls: true
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: f0e6a8bb98db3efd
+    short-id: b6dfd5c750351c57
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - vic
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - vic
   server: 103.238.227.211
   port: 21004
   udp: true
@@ -62,7 +75,19 @@ proxies:
     short-id: 2f34703f16523c80
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - vic
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - vic
+  server: 103.238.227.211
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: f0e6a8bb98db3efd
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - vic
   server: 103.238.227.211
   port: 21003
   udp: true
@@ -72,18 +97,6 @@ proxies:
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
     short-id: eb9539689690d35c
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - vic
-  server: 526.150333.xyz
-  port: 21001
-  udp: true
-  type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  tls: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: b6dfd5c750351c57
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -98,6 +111,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - vic
   - 🇭🇰 中国香港 (Hong Kong) 06 - vic
   - 🇭🇰 中国香港 (Hong Kong) 07 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 08 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 09 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +125,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - vic
   - 🇭🇰 中国香港 (Hong Kong) 06 - vic
   - 🇭🇰 中国香港 (Hong Kong) 07 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 08 - vic
+  - 🇭🇰 中国香港 (Hong Kong) 09 - vic
 rules:
 - MATCH,PROXIES
