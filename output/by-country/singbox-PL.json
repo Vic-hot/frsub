@@ -11,8 +11,50 @@
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - vic",
+      "server": "177.1.192.38",
+      "server_port": 8443,
+      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "upnl.giftsbattle.vip",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rczv8z0BFqH3QS9PfFAzLYZY8Iao1yEBhwcRskkQugo",
+          "short_id": "b3e515e37815559d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
+      "server": "31.59.143.147",
+      "server_port": 443,
+      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.waspnest.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk",
+          "short_id": "ae97223a8f799889"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -24,14 +66,77 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - vic",
-      "server": "site.teslamotor.site",
+      "tag": "🇵🇱 波兰 (Poland) 05 - vic",
+      "server": "155.117.5.208",
       "server_port": 20001,
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - vic",
+      "server": "177.1.192.117",
+      "server_port": 443,
+      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "up7.uni-plan.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ",
+          "short_id": "3952a220c86628a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - vic",
+      "server": "177.1.192.67",
+      "server_port": 443,
+      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "up4.uni-plan.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QmUszafz1gigUjf3R2GwZ9RVsEwZT-polu0l8zfNgA",
+          "short_id": "830e615a39f4c811"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 08 - vic",
+      "server": "169.40.42.163",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 04 - vic",
+      "tag": "🇵🇱 波兰 (Poland) 09 - vic",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -52,7 +157,12 @@
         "🇵🇱 波兰 (Poland) 01 - vic",
         "🇵🇱 波兰 (Poland) 02 - vic",
         "🇵🇱 波兰 (Poland) 03 - vic",
-        "🇵🇱 波兰 (Poland) 04 - vic"
+        "🇵🇱 波兰 (Poland) 04 - vic",
+        "🇵🇱 波兰 (Poland) 05 - vic",
+        "🇵🇱 波兰 (Poland) 06 - vic",
+        "🇵🇱 波兰 (Poland) 07 - vic",
+        "🇵🇱 波兰 (Poland) 08 - vic",
+        "🇵🇱 波兰 (Poland) 09 - vic"
       ]
     },
     {
@@ -62,7 +172,12 @@
         "🇵🇱 波兰 (Poland) 01 - vic",
         "🇵🇱 波兰 (Poland) 02 - vic",
         "🇵🇱 波兰 (Poland) 03 - vic",
-        "🇵🇱 波兰 (Poland) 04 - vic"
+        "🇵🇱 波兰 (Poland) 04 - vic",
+        "🇵🇱 波兰 (Poland) 05 - vic",
+        "🇵🇱 波兰 (Poland) 06 - vic",
+        "🇵🇱 波兰 (Poland) 07 - vic",
+        "🇵🇱 波兰 (Poland) 08 - vic",
+        "🇵🇱 波兰 (Poland) 09 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
