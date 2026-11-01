@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - vic
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - vic
   server: 155.117.5.208
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - vic
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - vic
   server: 46.28.67.55
   port: 443
   udp: true
@@ -37,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - vic
   - 🇷🇴 罗马尼亚 (Romania) 02 - vic
-  - 🇷🇴 罗马尼亚 (Romania) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - vic
   - 🇷🇴 罗马尼亚 (Romania) 02 - vic
-  - 🇷🇴 罗马尼亚 (Romania) 03 - vic
 rules:
 - MATCH,PROXIES

@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - vic",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - vic",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - vic",
       "server": "155.117.5.208",
       "server_port": 2052,
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - vic",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - vic",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -45,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 02 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 03 - vic"
+        "🇷🇴 罗马尼亚 (Romania) 02 - vic"
       ]
     },
     {
@@ -54,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 02 - vic",
-        "🇷🇴 罗马尼亚 (Romania) 03 - vic"
+        "🇷🇴 罗马尼亚 (Romania) 02 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
