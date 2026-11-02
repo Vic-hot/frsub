@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - vic",
-      "server": "122.176.216.52",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - vic",
+      "server": "www.windowsmsidownloads.com",
       "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.windowsmsidownloads.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "path": "/truth",
         "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+          "Host": "www.windowsmsidownloads.com"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - vic"
+        "🌐 其他地区 (Other) 01 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - vic"
+        "🌐 其他地区 (Other) 01 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
