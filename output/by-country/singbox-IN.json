@@ -6,6 +6,40 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - vic",
+      "server": "in.smrtai.top",
+      "server_port": 443,
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - vic",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - vic",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -28,7 +62,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - vic",
+      "tag": "🇮🇳 印度 (India) 04 - vic",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -47,52 +81,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 03 - vic",
-      "server": "in002.zestapp778.com",
-      "server_port": 42733,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "in002.zestapp778.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - vic",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - vic",
-      "server": "178.212.35.198",
-      "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -100,8 +88,7 @@
         "🇮🇳 印度 (India) 01 - vic",
         "🇮🇳 印度 (India) 02 - vic",
         "🇮🇳 印度 (India) 03 - vic",
-        "🇮🇳 印度 (India) 04 - vic",
-        "🇮🇳 印度 (India) 05 - vic"
+        "🇮🇳 印度 (India) 04 - vic"
       ]
     },
     {
@@ -111,8 +98,7 @@
         "🇮🇳 印度 (India) 01 - vic",
         "🇮🇳 印度 (India) 02 - vic",
         "🇮🇳 印度 (India) 03 - vic",
-        "🇮🇳 印度 (India) 04 - vic",
-        "🇮🇳 印度 (India) 05 - vic"
+        "🇮🇳 印度 (India) 04 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
