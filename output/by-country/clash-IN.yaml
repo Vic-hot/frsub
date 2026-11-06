@@ -17,15 +17,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - vic
-  server: 144.24.109.215
-  port: 51000
-  udp: true
-  type: hysteria2
-  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
-  sni: cn.cremedelamer.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 03 - vic
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -35,8 +27,8 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - vic
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - vic
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -45,25 +37,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 05 - vic
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 06 - vic
-  server: in002.zestapp778.com
-  port: 42733
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: in002.zestapp778.com
-  skip-cert-verify: true
+    headers:
+      Host: 13.140.56.100
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,9 +47,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - vic
   - 🇮🇳 印度 (India) 02 - vic
   - 🇮🇳 印度 (India) 03 - vic
-  - 🇮🇳 印度 (India) 04 - vic
-  - 🇮🇳 印度 (India) 05 - vic
-  - 🇮🇳 印度 (India) 06 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,8 +55,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - vic
   - 🇮🇳 印度 (India) 02 - vic
   - 🇮🇳 印度 (India) 03 - vic
-  - 🇮🇳 印度 (India) 04 - vic
-  - 🇮🇳 印度 (India) 05 - vic
-  - 🇮🇳 印度 (India) 06 - vic
 rules:
 - MATCH,PROXIES

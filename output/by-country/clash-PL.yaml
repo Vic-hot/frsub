@@ -5,31 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - vic
-  server: tfhx4tjzmy39benjh0hg.sellerape.cc
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03929684-0dcf-4add-bb02-2b2ba09d10a2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Kamryj_IUYECmozGabqUqauA0k0QpVUEPSBSEKi-ED0
-  servername: tfhx4tjzmy39benjh0hg.sellerape.cc
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02 - vic
-  server: 84.23.52.120
-  port: 28450
-  udp: true
-  type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  tls: true
-  servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 03 - vic
   server: 70.34.252.255
   port: 443
   udp: true
@@ -43,15 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - vic
-  - 🇵🇱 波兰 (Poland) 02 - vic
-  - 🇵🇱 波兰 (Poland) 03 - vic
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - vic
-  - 🇵🇱 波兰 (Poland) 02 - vic
-  - 🇵🇱 波兰 (Poland) 03 - vic
 rules:
 - MATCH,PROXIES
