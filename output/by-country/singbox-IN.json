@@ -6,41 +6,41 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "server": "178.212.35.198",
+      "server_port": 443,
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "148.113.5.44",
+      "server": "103.111.114.136",
       "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "uuid": "555b35c4-30f9-40c6-a61a-7f53ab1bea45",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "videos.porsche.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
+          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+          "short_id": "1a2b3c4d"
         }
       }
     },
@@ -53,19 +53,64 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
+        }
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - xiaohe",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
       "tls": {
         "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
+      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+      "server_port": 443,
+      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0175469f14317d82",
+        "headers": {
+          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
+        }
       }
     },
     {
@@ -76,7 +121,9 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe",
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ]
     },
     {
@@ -86,7 +133,9 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe",
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

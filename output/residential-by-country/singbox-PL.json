@@ -5,26 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tag": "🇵🇱 波兰 (Poland) 01 (家宽) - xiaohe",
+      "server": "185.86.145.55",
+      "server_port": 10470,
+      "uuid": "3ecbd833-40d8-4ddb-b80b-a7c4628ec7e5",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "wn-pl4.static-s3.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "GunService"
+        "service_name": "wn-adaptcloud"
       }
     },
     {
@@ -32,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
